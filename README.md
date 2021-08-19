@@ -62,3 +62,13 @@ Run `\review_stats.ps1 1` where 1 is the ticket number CORE-1. This gets called 
 1. It takes all commits that have been prefixed with `CORE-1:`.
 2. It collects and sums changes from each commit for the ticket with `git diff --numstat` and `git diff --name-status`.
 3. It prints out the results.
+
+## Examples
+
+### CORE-1
+
+Reviewing CORE-1 ticket shows the power of dir-diff for the only [one commit](https://github.com/solita/pwsh-git-code-review/commit/8e6dbf02c566477b41a5b45ec711134978d4039b) it has. Here is linear comparison but it looks the same with cherry-picking. ![CORE-1: Meld](/pics/core-1-meld.png)
+
+### CORE-2
+
+CORE-2 has two commits [1](https://github.com/solita/pwsh-git-code-review/commit/c298fa3894806726ddd0bb58d50ed26c4a2dbe94) and [2](https://github.com/solita/pwsh-git-code-review/commit/a3ce367d4a173e6dd6c1cca48e32dbf9331444a9). Review tool merges looks the two commits as a whole and prints that only readme had changed. ![CORE-2: Meld](/pics/core-2-meld.png)
