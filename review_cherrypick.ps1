@@ -25,6 +25,6 @@ $changes | ForEach-Object {
 }
 
 git difftool --no-prompt --dir-diff --tool=meld ($startBranch+".."+$implBranch)
-git checkout master
+git checkout main
 git branch -D $implBranch
 git branch -d $startBranch
