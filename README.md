@@ -1,6 +1,6 @@
 # pwsh-git-code-review
 
-Tool and examples about how to make code reviews with git without pull requests
+Tool and examples about how to make code reviews with git without pull requests.
 
 ## Requirements
 
@@ -35,7 +35,7 @@ There are two options supported:
 
 #### Linear comparison
 
-Run `.\review_linear_comparison.ps1 1` where 1 is the ticket number CORE-1. 
+Run `.\review_linear_comparison.ps1 1` where 1 is the ticket number CORE-1.
 
 1. It takes all commits that have been prefixed with `CORE-1:`.
 2. It construct comparison from first commit to last (including all other commits).
@@ -58,5 +58,5 @@ Run `.\review_cherrypick.ps1 1` where 1 is the ticket number CORE-1.
 Run `\review_stats.ps1 1` where 1 is the ticket number CORE-1. This gets called in linear comparison too.
 
 1. It takes all commits that have been prefixed with `CORE-1:`.
-2. It collects and sums changes from each commit for the ticket with `git diff --numstat` and `git diff --name-status`. 
+2. It collects and sums changes from each commit for the ticket with `git diff --numstat` and `git diff --name-status`.
 3. It prints out the results.
