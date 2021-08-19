@@ -88,6 +88,10 @@ CORE-3 has two commits [1](https://github.com/solita/pwsh-git-code-review/commit
 
 ![CORE-3 cherry-pick and automerge](pics/core-3-cherrypick-automerge.png)
 
+Later on we added one more commit which was not so lucky one. Automerge didn't work anymore and we were left into resolving conflict. Script is kind of eager to continue and does not care that much about problems. Cleanup is required.
+
+![CORE-3 cherry-pick failed](pics/core-3-cherrypick-automerge-failed.png)
+
 ## This is awesome, I want to use it
 
 MIT license is permissive. Take what you want and use it. By design decision I split all the goodies into their own files. They could be combined into one file easily but I think this way examples are clearer. Most likely you want to make some changes to this if you start using it as review processes tends to change from person to person. It should be relatively easy to glue pieces together and give switches for the "one tool" if you choose that path.
