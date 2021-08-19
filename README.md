@@ -63,6 +63,13 @@ Run `\review_stats.ps1 1` where 1 is the ticket number CORE-1. This gets called 
 2. It collects and sums changes from each commit for the ticket with `git diff --numstat` and `git diff --name-status`.
 3. It prints out the results.
 
+#### Print urls for commits in ticket
+
+Run `\review_commit_urls.ps1 1` where 1 is the ticket number CORE-1.
+
+1. It takes all commits that have been prefixed with `CORE-1:`.
+2. It prints out urls to GitHub for each commit for this ticket
+
 ## Examples
 
 ### CORE-1
