@@ -12,8 +12,8 @@ if($null -ne (git status --porcelain)) {
     exit 0
 }
 
-$startBranch = ("start-review-"+$ticket)
-$implBranch = ("impl-review-"+$ticket)
+$startBranch = ("start-review-"+$ticketNumber)
+$implBranch = ("impl-review-"+$ticketNumber)
 $commitBeforeChanges = ($firstCommitHash + "~1")
 git branch $startBranch $commitBeforeChanges
 git checkout -b $implBranch $commitBeforeChanges
