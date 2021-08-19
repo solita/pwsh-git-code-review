@@ -72,3 +72,9 @@ Reviewing CORE-1 ticket shows the power of dir-diff for the only [one commit](ht
 ### CORE-2
 
 CORE-2 has two commits [1](https://github.com/solita/pwsh-git-code-review/commit/c298fa3894806726ddd0bb58d50ed26c4a2dbe94) and [2](https://github.com/solita/pwsh-git-code-review/commit/a3ce367d4a173e6dd6c1cca48e32dbf9331444a9). Review tool merges looks the two commits as a whole and prints that only readme had changed. ![CORE-2: Meld](/pics/core-2-meld.png)
+
+### CORE-3
+
+CORE-3 has two commits [1](https://github.com/solita/pwsh-git-code-review/commit/89d3add17c3a917c2a8dad4d4fefb0aec8e06d77) and [2](https://github.com/solita/pwsh-git-code-review/commit/d458c98a7a886633bf7be34eb77435be0afe84a5) but there is also a [CORE-4 commit](https://github.com/solita/pwsh-git-code-review/commit/a5fb795f8a871d62529cb5d8b62bd278c6beed6f) in the middle of them changing same file. Luckily git was able to automerge because no same rows were changed and so our cherry-picking worked.
+
+![CORE-3 cherry-pick and automerge](pics/core-3-cherrypick-automerge.png)
