@@ -18,7 +18,7 @@ Windows:
 
 Mac/Linux:
 
-Sorry, try to google! In Mac/Linux you might need to also chmod +x the `.githooks\commit-msg` file and in worst case make dos2unix bit conversion for the `.githooks\commit-msg`file.
+Sorry, try to google! In Mac/Linux you might need to also chmod +x the `.githooks\commit-msg` file and in worst case make dos2unix bit conversion for it.
 
 ## How to use
 
