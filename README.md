@@ -18,7 +18,7 @@ Windows:
 
 Mac/Linux:
 
-Sorry, try to google! In Mac/Linux you might need to also chmod +x the .githooks/commit-msg file and in worst case make dos2unix bit conversion for the `.githooks\commit-msg`file.
+Sorry, try to google! In Mac/Linux you might need to also chmod +x the `.githooks\commit-msg` file and in worst case make dos2unix bit conversion for the `.githooks\commit-msg`file.
 
 ## How to use
 
@@ -26,7 +26,7 @@ Sorry, try to google! In Mac/Linux you might need to also chmod +x the .githooks
 
 Run `init.ps1` in the root of the repository or manually run `git config core.hooksPath .githooks`. This sets git to uuse `.githooks` folder as a source for **[githooks](https://git-scm.com/docs/githooks)**.
 
-This will eventually run `.githooks/commit-msg` when commiting changes. It checks that each commit is of format `<prefix>-<nnn>: <keyword> something` e.g. `CORE-2: Add requirements to readme`. Ticket prefix can be changed from `data/ticketprefix.txt`.
+This will eventually run `.githooks\commit-msg` when commiting changes. It checks that each commit is of format `<prefix>-<nnn>: <keyword> something` e.g. `CORE-2: Add requirements to readme`. Ticket prefix can be changed from `data\ticketprefix.txt`.
 
 ### Review commits for a ticket
 
